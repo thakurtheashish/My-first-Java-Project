@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class MainClassForDiscountOnProducts {
 
 	public static void main(String[] args) {
+		DiscountOnProducts dop = new DiscountOnProducts();
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.print("The original price = $");
@@ -13,11 +14,10 @@ public class MainClassForDiscountOnProducts {
 		
 		Scanner promo = new Scanner(System.in);
 		System.out.print("Enter Promo Code = ");
-		double promocode = promo.nextDouble();
+		String promocode1 = promo.nextLine();
 		
-		DiscountOnProducts dop = new DiscountOnProducts();
 		dop.originalAmount = originalPrice;
-		dop.promoCode = promocode;
+		dop.promoCode = promocode1;
 		
 		dop.discountForEveryone();
 
