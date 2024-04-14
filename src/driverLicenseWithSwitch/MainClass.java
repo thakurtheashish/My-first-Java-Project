@@ -6,9 +6,9 @@ public class MainClass {
 
 	public static void main(String[] args) {
 
-		Scanner scan_age = new Scanner(System.in);
+		Scanner scanAge = new Scanner(System.in);
 		System.out.print("Enter your age = ");
-		int ageOfApplicant = scan_age.nextInt();
+		int ageOfApplicant = scanAge.nextInt();
 
 		if (ageOfApplicant < 16) {
 			System.out.println("You are not old enough to apply for a license");

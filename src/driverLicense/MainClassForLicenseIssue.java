@@ -6,8 +6,8 @@ public static void main(String[] args) {
 	
 	IssueDriverLicense License = new IssueDriverLicense ();
 	
-	License.ageOfApplicant = 14;
-	License.currentLicense = "G";
+	License.ageOfApplicant = 19;
+	License.currentLicense = "None";
 	
 	System.out.println("Age of Applicant is = " + License.ageOfApplicant);
 	System.out.println("Current Level of License = " + License.currentLicense);
