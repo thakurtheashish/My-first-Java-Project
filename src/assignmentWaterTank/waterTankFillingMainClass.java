@@ -11,20 +11,18 @@ public class waterTankFillingMainClass {
 
 	public static void main(String[] args) {
 		
-		waterTank wt = new waterTank();
+		int bucketCapacity=10;
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter current level of tank (in litres) = ");
 		int tankLevel = sc.nextInt();
+int j = tankLevel + bucketCapacity;
 		
-		wt.tankWaterLevel = tankLevel;
-		
-
-		if (tankLevel % 2 == 0 && tankLevel % 5 == 0) {
-			wt.checkWaterLevel();
-
-	} else {
-		System.out.println("Invalid Entry");
+			 for (int i = tankLevel; i <= 100 ; i = j+10)
+				
+				System.out.println("Drop bucket and tank level is = " + j + " litres");
+			if (tankLevel == 100) {
+				System.out.println("Tank is full");
+			}
 	}
-}
 }
