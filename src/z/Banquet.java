@@ -43,6 +43,7 @@ public class Banquet {
 	}
 
 	public double calculateTheTotalCost() {
+	    int a = 10;
 		baseBookingCost = calculateBaseCost();
 		cessCost = calculateCess(baseBookingCost);
 		taxOnBaseCost = calculateTax(baseBookingCost);

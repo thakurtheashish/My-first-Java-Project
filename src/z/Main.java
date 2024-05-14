@@ -23,7 +23,7 @@ public class Main {
 		
 		System.out.print("The total cost for booking is : $" + banquet.calculateTheTotalCost());
 		
-		
+	  
 	}
 
 }
